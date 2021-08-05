@@ -1,23 +1,23 @@
 #include <SFML/Graphics.hpp>
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(1920, 1080), "SFML tutorial", sf::Style::None);
+    sf::RenderWindow window(sf::VideoMode(960, 540), "SFML tutorial", sf::Style::None);
     sf::RenderTexture texture;
     srand(time(0));
 
-    if (!texture.create(1920, 1080))
+    if (!texture.create(960, 540))
         return -1;
 
-    int x[3] = {960, 0, 1920};
-    int y[3] = {0, 1080, 1080};
+    int x[3] = {460, 0, 960};
+    int y[3] = {0, 540, 540};
 
     float last_x = 960;
-    float last_y = 1080;
+    float last_y = 540;
 
     texture.clear(sf::Color::Black);
 
     while (window.isOpen()) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)) 
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::S)) 
             window.close();   
 
         int dice = rand() % 3;
