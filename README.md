@@ -1,3 +1,3 @@
-Sierpinski-s-Triangle using SFML framework in C++ (using dice method)
-
+Sierpinski-s-Triangle using SFML framework in C++ 
+"Dice" method
 
