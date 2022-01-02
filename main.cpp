@@ -18,7 +18,7 @@ int main() {
     texture.clear(sf::Color::Black);
     sf::Sprite sprite(texture.getTexture());
 
-    int iterations = 10000000;  //You can change this to whatever value you want... More value more detail but after some point it remains the same
+    int iterations = 10000000;  //You can change this to whatever value you want... More value more detail
     int i = 0;
 
     while (i < iterations) {
